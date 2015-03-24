@@ -4,8 +4,8 @@
 
 ```shell
 
-# PULL from BitBucket hub
-> git checkout develop
+# PULL from Github
+> git checkout master
 > git pull --rebase origin
 
 # DELETE old local branches
