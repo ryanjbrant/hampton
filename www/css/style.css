@@ -1332,6 +1332,8 @@ a.logo:hover{
   text-align: left;
   background-color: #04131A;
   z-index: 201;
+  border-bottom: 1px solid rgb(29, 29, 29);
+
     
     -webkit-transition: height 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
     -moz-transition: height 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
@@ -1843,9 +1845,12 @@ a.logo:hover{
 .bg-gray{
   background-color: #f4f4f4;
 }
-.bg-gray-lighter {
-        background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+.bg-blue-dark {
+        background: #04131A;
 }
+.bg-gray-lighter{
+  background-color: #f4f4f4;
+  }
 
 .bg-dark,
 .bg-dark-lighter,
@@ -5313,6 +5318,10 @@ section:hover .small-item-carousel .owl-next{
 
 .font-blue{
   color: #1F5671 !important;
+}
+
+.font-light-blue{
+  color: #1C9ED4 !important;
 }
 
 
