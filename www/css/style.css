@@ -108,6 +108,7 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
 .hidden{display:none;}
 .inline-block{display:inline-block;}
 .white{ color: #fff !important; }
+.bgwhite{ background: #fff !important; }
 .black{ color: #000 !important; }
 .color{ color: #e41919 !important; }
 .stick-fixed{
@@ -115,11 +116,18 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
   top: 0;
   left: 0;
 }
+
+.nopadding {padding:0}
+.padding30 {padding:30px}
 .round{
     -webkit-border-radius: 2px !important;
     -moz-border-radius: 2px !important;
     border-radius: 2px !important;
 }
+
+.leftcover, .rightcover {position: absolute; height:100%}
+
+.rightcover {right:0}
 
 ::-moz-selection{ color: #fff; background:#000; }
 ::-webkit-selection{ color: #fff; background:#000; }
@@ -365,6 +373,10 @@ h1{
 
 h2{
   font-size: 28px;
+}
+h5 {
+  letter-spacing: 5px;
+  margin: 0;
 }
 h6{
     font-weight: 700;
@@ -1004,6 +1016,7 @@ a.btn-mod:focus{
   position: absolute;
   bottom: 20px;
   left: 50%;
+  z-index: 100;
     text-align: center;
     text-decoration: none;
     
@@ -1294,6 +1307,7 @@ a.btn-mod:focus{
   vertical-align: middle;
   max-width: 350px;
     height: 75px;
+    padding:18px;
     
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
@@ -3191,8 +3205,23 @@ a.logo:hover{
     margin: 0px 0px -10px 0;
   text-align: right;
 }
-.banner-image img{
-    
+.m5{
+    margin: 5% 0 0;
+}
+.m10{
+    margin: 10% 0 0;
+}
+.m20{
+    margin: 20% 0 0;
+}
+.m30{
+    margin: 30% 0 0;
+}
+.m40{
+    margin: 40% 0 0;
+}
+.m50{
+    margin: 50% 0 0;
 }
 
 
@@ -3642,7 +3671,7 @@ a.logo:hover{
     margin: 0 6px;
     text-align: center;
     display: inline-block;
-    color: #111;
+    color: #aaa;
     
     -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
@@ -5320,7 +5349,6 @@ section:hover .small-item-carousel .owl-next{
 /* ==============================
    Bootstrap multicolumn grid
    ============================== */
-
 /* clear the first in row for any block that has the class "multi-columns-row" */
 .multi-columns-row .col-xs-6:nth-child(2n + 3) { clear: left; }
 .multi-columns-row .col-xs-4:nth-child(3n + 4) { clear: left; }
