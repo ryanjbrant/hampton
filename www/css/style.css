@@ -1306,8 +1306,8 @@ a.btn-mod:focus{
   display: table-cell;
   vertical-align: middle;
   max-width: 350px;
-    height: 75px;
-    padding:18px;
+    height: 65px;
+    padding:auto;
     
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
@@ -2396,6 +2396,7 @@ a.logo:hover{
 }
 .team-item-image img{
     width: 100%;
+    -webkit-filter: grayscale(100%);
 }
 .team-item-image:after{
   content: " ";
